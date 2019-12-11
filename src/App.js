@@ -4,15 +4,19 @@ import Header from "./components/header";
 import Image from "./components/image";
 import Description from "./components/description";
 import Footer from "./components/footer";
+import Calendar from "./components/calendar";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <div class="img-container">
-        <Image />
-      </div>
+
+      <Image />
+
       <Description />
+
+      <Calendar />
+
       <Footer />
     </div>
   );
