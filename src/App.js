@@ -4,16 +4,42 @@ import Header from "./components/header";
 import Image from "./components/image";
 import Description from "./components/description";
 import Footer from "./components/footer";
-import Calendar from "./components/calendar";
+// import Calendar from "./components/calendar";
+import ReactDOM from "react-dom";
+
+let date = "2019-10-06"
+
+
+const Calendar = () => {
+  //   useEffect();
+
+  const cal = (
+    <div className="calendar">
+      <input
+        type="date"
+        onInput={e => {
+          date = e.target.value;
+          console.log(date);
+          ReactDOM.render(<App />, document.getElementById("root"));
+        }}
+      />
+    </div>
+  );
+
+  return cal;
+};
+
+
 
 function App() {
+  
   return (
     <div className="App">
-      <Header />
+      <Header date={date}/>
 
-      <Image />
+      <Image date={date}/>
 
-      <Description />
+      <Description date={date}/>
 
       <Calendar />
 
@@ -21,5 +47,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

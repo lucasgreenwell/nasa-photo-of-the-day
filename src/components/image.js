@@ -5,7 +5,7 @@ const Image = (props) => {
     const [pic, setPic] = useState({});
 
     useEffect(() => {
-        axios.get(`https://api.nasa.gov/planetary/apod?api_key=CdV79KpZCK2hSkvv8ei9apkUcpm40sdONvynOBNK&date=2019-10-05`)
+        axios.get(`https://api.nasa.gov/planetary/apod?api_key=CdV79KpZCK2hSkvv8ei9apkUcpm40sdONvynOBNK&date=${props.date}`)
             .then(res => {
                 console.log(res);
                 setPic(res.data);
@@ -13,7 +13,7 @@ const Image = (props) => {
             .catch(err => {
                 console.log(err);
             })
-    }, [])
+    }, [props.date])
 
     return (
 

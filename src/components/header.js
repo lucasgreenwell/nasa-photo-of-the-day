@@ -5,7 +5,7 @@ const Header = props => {
   const [title, setTitle] = useState({});
 
   useEffect(() => {
-      axios.get(`https://api.nasa.gov/planetary/apod?api_key=CdV79KpZCK2hSkvv8ei9apkUcpm40sdONvynOBNK`)
+      axios.get(`https://api.nasa.gov/planetary/apod?api_key=CdV79KpZCK2hSkvv8ei9apkUcpm40sdONvynOBNK&date=${props.date}`)
           .then(res => {
               // console.log(res);
               setTitle(res.data);
@@ -13,7 +13,7 @@ const Header = props => {
           .catch(err => {
               console.log(err);
           })
-  }, [])
+  }, [props.date])
 
   // return 'string'
   return (<div className="Header">{title.title}</div>);
