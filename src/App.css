@@ -4,25 +4,18 @@
   max-width: 100%;
 }
 .img-container{
-  max-width: 100%;
-  margin: 2rem; 
-  display: flex;
-  justify-content: center;
-  /* border: red solid 2px; */
+
 }
-.Image{
-  max-width: 100%;
-  border-radius: 2rem;
-}
-.Header {
-  font-size: 3rem;
-  text-align: center;
-}
-.Description {
-  font-size: 1.5rem;
-  text-align: justify;
-  padding: 2%;
-}
+
+
 .Footer {
   height: 200px;
+}
+.calendar{
+  text-align: center;
+  margin: 5%;
+}
+body{
+  background-image: url(https://3iom3142cnb81rlnt6w4mtlr-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Bf64580dfb9f301a0949e60106526057.1824x0_q100_watermark_watermark_opacity-10_watermark_position-6_watermark_text-Copyright_Intihuatana.jpg);
+  color: yellow;
 }
