@@ -1,33 +1,21 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 100%;
+}
+.img-container{
+
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Footer {
+  height: 200px;
+}
+.calendar{
+  text-align: center;
+  margin: 5%;
+}
+body{
+  background-image: url(https://3iom3142cnb81rlnt6w4mtlr-wpengine.netdna-ssl.com/wp-content/uploads/2019/08/Bf64580dfb9f301a0949e60106526057.1824x0_q100_watermark_watermark_opacity-10_watermark_position-6_watermark_text-Copyright_Intihuatana.jpg);
+  color: yellow;
 }
